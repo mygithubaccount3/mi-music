@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/header.png");
+  border-bottom: 270px solid transparent;
+  padding-top: 25px;
+  padding-left: 25px;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & > .logo {
+      color: #ffffff;
+      font-family: Barlow;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 12px;
+      margin-top: 39px;
+      margin-left: 25px;
+      text-transform: uppercase;
+      /* Text style for "MUSIC." */
+      letter-spacing: 6px;
+
+      &::before {
+        background-color: #032c9e;
+        color: #ffffff;
+        content: "Mi";
+        font-family: Barlow;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 12px;
+        padding: 11px;
+        text-transform: uppercase;
+        /* Text style for "MI" */
+        letter-spacing: 6px;
+      }
+    }
+
+    & > .nav {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin-right: 64px;
+      padding-top: 22px;
+      padding-left: 0;
+      width: 38%;
+
+      & > .nav__item {
+
+        display: inline-block;
+
+
+        & > a {
+          color: #ffffff;
+          font-family: Barlow, sans-serif;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 12px;
+          text-decoration: none;
+          text-transform: uppercase;
+          /* Text style for "HOME" */
+          letter-spacing: 4.8px;
+
+          &:hover {
+            text-decoration: line-through;
+          }
+        }
+
+        &--fb > a::before {
+          content: "\f230";
+          font-family: FontAwesome;
+        }
+
+        &--tw > a::before {
+          content: "\f099";
+          font-family: FontAwesome;
+        }
+
+        &--ig > a::before {
+          content: "\f16d";
+          font-family: FontAwesome;
+        }
+
+        &--yt > a::before {
+          content: "\f16a";
+          font-family: FontAwesome;
+        }
+      }
+    }
+  }
+
+  .title-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    padding-top: 129px;
+
+    .subtitle {
+      color: #ffffff;
+      font-family: Barlow;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 12px;
+      padding-left: 3px;
+      text-transform: uppercase;
+      /* Text style for "WORLD MUSI" */
+      letter-spacing: 5px;
+      width: 14%;
+    }
+
+    .title {
+      color: #ffffff;
+      font-family: Barlow;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 80px;
+      margin-top: 14px;
+      margin-left: -27px;
+      text-transform: uppercase;
+      /* Text style for "MI Music:" */
+      letter-spacing: -0.6px;
+      text-align: center;
+      width: 48%;
+    }
+
+    .avatar {
+      margin-top: 62px;
+      padding-top: 62px;
+      padding-left: 40px;
+    }
+
+    .name {
+      color: #ffffff;
+      font-family: Barlow;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      /* Text style for "james burl" */
+      letter-spacing: 2.8px;
+      padding-top: 5px;
+      padding-left: 38px;
+      text-align: center;
+    }
+  }
+}

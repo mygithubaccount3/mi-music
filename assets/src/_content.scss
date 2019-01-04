@@ -1,0 +1,160 @@
+main {
+  display: grid;
+  /*grid-column-gap: 132px;*/
+  grid-template-columns: 33.1% 6.7% 52.5% 11%;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+
+  .content-title {
+    color: #1b2550;
+    font-family: "Barlow";
+    font-size: 48px;
+    font-weight: 600;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: start;
+    line-height: 38px;
+    margin-top: 73px;
+    margin-bottom: 24px;
+  }
+
+  .content-title--small {
+    align-self: center;
+    color: #303342;
+    font-size: 36px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: end;
+    line-height: 48px;
+    margin-top: 58px;
+    /*padding-top: 175px;*/
+    width: 41%;
+  }
+
+  .content-title--after {
+    align-self: center;
+    grid-column: 3/7;
+    grid-row: 7/8;
+    margin-bottom: 36px;
+  }
+
+  .date {
+    align-self: end;
+    color: #484b59;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 700;
+    grid-column: 1/2;
+    grid-row: 5/6;
+    justify-self: end;
+    line-height: 38px;
+    margin-top: -3px;
+    /*padding-left: 32px;*/
+    text-transform: uppercase;
+    /* Text style for "JAN 20, 20" */
+    letter-spacing: 3.2px;
+    width: 41.5%;
+  }
+
+  .description {
+    color: #7c8092;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: start;
+    line-height: 30px;
+    width: 87%;
+  }
+
+  .description--small {
+    grid-column: 1/2;
+    grid-row: 6/8;
+    justify-self: end;
+    width: 41%;
+  }
+
+  .description--after {
+    grid-column: 3/4;
+    grid-row: 8/9;
+    margin-top: 6px;
+
+  }
+
+  /*video {
+    grid-column: 1;
+  }*/
+
+  /*.main-video {
+    grid-column: 2;
+    padding-top: 89px;
+    width: 100%;
+  }*/
+
+  .aside {
+    grid-column: 1/2;
+    justify-self: end;
+    margin-top: 56px;
+    /*margin-left: 242px;*/
+    grid-row: 3/4;
+    width: 41%;
+  }
+
+  .pete {
+    grid-column: 3/4;
+    grid-row: 3/7;
+    height: auto;
+    justify-self: center;
+    margin-top: 56px;
+    width: 100%;
+  }
+
+  .read-more {
+    align-self: start;
+    border-left: 2px solid #032c9e;
+    grid-column: 1/2;
+    grid-row: 8/9;
+    justify-self: end;
+    height: 7%;
+    margin-top: 24px;
+    /*margin-left: -46px;*/
+    padding-left: 29px;
+    width: 36%;
+
+    color: #1b2550;
+    font-family: Barlow;
+    font-size: 14px;
+    font-weight: 700;
+    /*line-height: 30px;*/
+    text-transform: uppercase;
+    /* Text style for "read more" */
+    letter-spacing: 2.8px;
+  }
+
+  .quote {
+    color: #7c8092;
+    font-family: Barlow;
+    font-size: 36px;
+    font-style: italic;
+    grid-row: 9/10;
+    line-height: 48px;
+  }
+
+  .quote--left {
+    grid-column: 1/4;
+    justify-self: start;
+    margin-top: 51px;
+    margin-left: 375px;
+    padding-left: 46px;
+    width: 24%;
+  }
+
+  .quote--right {
+    align-self: end;
+    grid-column: 3/4;
+    justify-self: center;
+    margin-top: 23px;
+    padding-left: 33px;
+    width: 43%;
+  }
+}

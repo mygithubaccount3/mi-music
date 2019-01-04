@@ -1,0 +1,279 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/header.png");
+  border-bottom: 270px solid transparent;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+header .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-wrapper > .logo {
+  color: #ffffff;
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 12px;
+  margin-top: 39px;
+  margin-left: 25px;
+  text-transform: uppercase;
+  /* Text style for "MUSIC." */
+  letter-spacing: 6px;
+}
+header .header-wrapper > .logo::before {
+  background-color: #032c9e;
+  color: #ffffff;
+  content: "Mi";
+  font-family: Barlow;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 12px;
+  padding: 11px;
+  text-transform: uppercase;
+  /* Text style for "MI" */
+  letter-spacing: 6px;
+}
+header .header-wrapper > .nav {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 64px;
+  padding-top: 22px;
+  padding-left: 0;
+  width: 38%;
+}
+header .header-wrapper > .nav > .nav__item {
+  display: inline-block;
+}
+header .header-wrapper > .nav > .nav__item > a {
+  color: #ffffff;
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Text style for "HOME" */
+  letter-spacing: 4.8px;
+}
+header .header-wrapper > .nav > .nav__item > a:hover {
+  text-decoration: line-through;
+}
+header .header-wrapper > .nav > .nav__item--fb > a::before {
+  content: "";
+  font-family: FontAwesome;
+}
+header .header-wrapper > .nav > .nav__item--tw > a::before {
+  content: "";
+  font-family: FontAwesome;
+}
+header .header-wrapper > .nav > .nav__item--ig > a::before {
+  content: "";
+  font-family: FontAwesome;
+}
+header .header-wrapper > .nav > .nav__item--yt > a::before {
+  content: "";
+  font-family: FontAwesome;
+}
+header .title-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+  padding-top: 129px;
+}
+header .title-wrapper .subtitle {
+  color: #ffffff;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 12px;
+  padding-left: 3px;
+  text-transform: uppercase;
+  /* Text style for "WORLD MUSI" */
+  letter-spacing: 5px;
+  width: 14%;
+}
+header .title-wrapper .title {
+  color: #ffffff;
+  font-family: Barlow;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  margin-top: 14px;
+  margin-left: -27px;
+  text-transform: uppercase;
+  /* Text style for "MI Music:" */
+  letter-spacing: -0.6px;
+  text-align: center;
+  width: 48%;
+}
+header .title-wrapper .avatar {
+  margin-top: 62px;
+  padding-top: 62px;
+  padding-left: 40px;
+}
+header .title-wrapper .name {
+  color: #ffffff;
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  /* Text style for "james burl" */
+  letter-spacing: 2.8px;
+  padding-top: 5px;
+  padding-left: 38px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  /*grid-column-gap: 132px;*/
+  grid-template-columns: 33.1% 6.7% 52.5% 11%;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  /*video {
+    grid-column: 1;
+  }*/
+  /*.main-video {
+    grid-column: 2;
+    padding-top: 89px;
+    width: 100%;
+  }*/
+}
+main .content-title {
+  color: #1b2550;
+  font-family: "Barlow";
+  font-size: 48px;
+  font-weight: 600;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: start;
+  line-height: 38px;
+  margin-top: 73px;
+  margin-bottom: 24px;
+}
+main .content-title--small {
+  align-self: center;
+  color: #303342;
+  font-size: 36px;
+  grid-column: 1/2;
+  grid-row: 4/5;
+  justify-self: end;
+  line-height: 48px;
+  margin-top: 58px;
+  /*padding-top: 175px;*/
+  width: 41%;
+}
+main .content-title--after {
+  align-self: center;
+  grid-column: 3/7;
+  grid-row: 7/8;
+  margin-bottom: 36px;
+}
+main .date {
+  align-self: end;
+  color: #484b59;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 700;
+  grid-column: 1/2;
+  grid-row: 5/6;
+  justify-self: end;
+  line-height: 38px;
+  margin-top: -3px;
+  /*padding-left: 32px;*/
+  text-transform: uppercase;
+  /* Text style for "JAN 20, 20" */
+  letter-spacing: 3.2px;
+  width: 41.5%;
+}
+main .description {
+  color: #7c8092;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: start;
+  line-height: 30px;
+  width: 87%;
+}
+main .description--small {
+  grid-column: 1/2;
+  grid-row: 6/8;
+  justify-self: end;
+  width: 41%;
+}
+main .description--after {
+  grid-column: 3/4;
+  grid-row: 8/9;
+  margin-top: 6px;
+}
+main .aside {
+  grid-column: 1/2;
+  justify-self: end;
+  margin-top: 56px;
+  /*margin-left: 242px;*/
+  grid-row: 3/4;
+  width: 41%;
+}
+main .pete {
+  grid-column: 3/4;
+  grid-row: 3/7;
+  height: auto;
+  justify-self: center;
+  margin-top: 56px;
+  width: 100%;
+}
+main .read-more {
+  align-self: start;
+  border-left: 2px solid #032c9e;
+  grid-column: 1/2;
+  grid-row: 8/9;
+  justify-self: end;
+  height: 7%;
+  margin-top: 24px;
+  /*margin-left: -46px;*/
+  padding-left: 29px;
+  width: 36%;
+  color: #1b2550;
+  font-family: Barlow;
+  font-size: 14px;
+  font-weight: 700;
+  /*line-height: 30px;*/
+  text-transform: uppercase;
+  /* Text style for "read more" */
+  letter-spacing: 2.8px;
+}
+main .quote {
+  color: #7c8092;
+  font-family: Barlow;
+  font-size: 36px;
+  font-style: italic;
+  grid-row: 9/10;
+  line-height: 48px;
+}
+main .quote--left {
+  grid-column: 1/4;
+  justify-self: start;
+  margin-top: 51px;
+  margin-left: 375px;
+  padding-left: 46px;
+  width: 24%;
+}
+main .quote--right {
+  align-self: end;
+  grid-column: 3/4;
+  justify-self: center;
+  margin-top: 23px;
+  padding-left: 33px;
+  width: 43%;
+}
+
+/*# sourceMappingURL=main.css.map */
