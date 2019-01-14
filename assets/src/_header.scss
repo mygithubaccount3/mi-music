@@ -4,6 +4,7 @@ body {
 
 header {
   background-image: url("../images/header.png");
+  background-repeat: no-repeat;
   border-bottom: 270px solid transparent;
   padding-top: 25px;
   padding-left: 25px;
@@ -105,11 +106,11 @@ header {
       font-size: 18px;
       font-weight: 700;
       line-height: 12px;
-      padding-left: 3px;
+      /*padding-left: 3px;*/
       text-transform: uppercase;
       /* Text style for "WORLD MUSI" */
-      letter-spacing: 5px;
-      width: 14%;
+      letter-spacing: 4.8px;
+      width: 22%;
     }
 
     .title {
@@ -124,7 +125,7 @@ header {
       /* Text style for "MI Music:" */
       letter-spacing: -0.6px;
       text-align: center;
-      width: 48%;
+      width: 77%;
     }
 
     .avatar {
