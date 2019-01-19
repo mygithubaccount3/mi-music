@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="assets/dist/main.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow:400,600,700|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/src/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/src/slick/slick-theme.css"/>
 </head>
 <body>
 <header>
@@ -76,7 +78,15 @@
     </ul>
     <h1 class="news-header">Latest News</h1>
     <div class="separator"></div>
-    <section class="news">
+
+    <div class="your-class">
+        <div><img src="assets/images/cody-schneider.png" alt=""></div>
+        <div><img src="assets/images/victor-rodvang.png" alt=""></div>
+        <div><img src="assets/images/oskar-wimmerman.png" alt=""></div>
+        <div><img src="assets/images/puk-khantho.png" alt=""></div>
+    </div>
+
+    <!--<section class="news">
         <div class="news__item">
             <img src="assets/images/cody-schneider.png" alt="Cody Schneider">
 
@@ -92,8 +102,44 @@
         </div>
         <div class="news__item"></div>
         <div class="news__item"></div>
-    </section>
+    </section>-->
 </main>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/src/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        /*$('.your-class').slick({
+            arrows: true,
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 2,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+    });*/
 
+        $('.your-class').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+        });
+    });
+</script>
 </body>
 </html>

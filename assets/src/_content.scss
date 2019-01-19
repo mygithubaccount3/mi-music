@@ -6,28 +6,21 @@ main {
 
   .content-title {
     color: #1b2550;
-    font-family: "Barlow";
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
-    grid-column: 3/7;
-    grid-row: 1/2;
-    /*justify-self: start;*/
+    grid-area: 1/3/2/7;
     line-height: 38px;
     margin-top: 72px;
     margin-bottom: 24px;
   }
 
   .content-title--small {
-    /*align-self: center;*/
     color: #303342;
-    font-size: 36px;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    /*justify-self: end;*/
+    font-size: 2.25rem;
+    grid-area: 4/1/5/2;
     line-height: 48px;
     margin-top: 58px;
     padding-left: 10px;
-    /*padding-top: 175px;*/
   }
 
   .content-title--after {
@@ -43,10 +36,8 @@ main {
   }
 
   .date {
-    /*align-self: end;*/
     color: #484b59;
-    font-family: Barlow;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     /*grid-column: 1/2;*/
     grid-row: 5/6;
@@ -55,26 +46,20 @@ main {
     margin-top: -3px;
     padding-left: 12px;
     text-transform: uppercase;
-    /* Text style for "JAN 20, 20" */
     letter-spacing: 3.2px;
   }
 
   .description {
     color: #7c8092;
-    font-family: Roboto;
-    font-size: 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 0.9375rem;
     font-weight: 400;
-    grid-column: 3/8;
-    grid-row: 2/3;
-    /*justify-self: start;*/
+    grid-area: 2/3/3/8;
     line-height: 30px;
-    /*width: 87%;*/
   }
 
   .description--small {
-    grid-column: 1/2;
-    grid-row: 6/8;
-    /*justify-self: end;*/
+    grid-area: 6/1/8/2;
     padding-left: 16px;
   }
 
@@ -110,40 +95,31 @@ main {
   }
 
   .pete {
-    grid-column: 3/9;
-    grid-row: 3/7;
+    grid-area: 3/3/7/9;
     height: auto;
-    /*justify-self: center;*/
     margin-top: 56px;
     width: 100%;
   }
 
   .read-more {
-    /*align-self: start;*/
     border-left: 2px solid #032c9e;
     /*grid-column: 1/2;*/
     grid-row: 8/9;
-    /*justify-self: end;*/
     height: 7%;
     margin-top: 25px;
     margin-left: 15px;
     padding-left: 29px;
-    /*width: 36%;*/
 
     color: #1b2550;
-    font-family: Barlow;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    /*line-height: 30px;*/
     text-transform: uppercase;
-    /* Text style for "read more" */
     letter-spacing: 2.8px;
   }
 
   .quote {
     color: #7c8092;
-    font-family: Barlow;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-style: italic;
     grid-row: 9/10;
     line-height: 48px;
@@ -151,9 +127,7 @@ main {
 
   .quote--left {
     grid-column: 1/4;
-    /*justify-self: start;*/
     margin-top: 82px;
-    /*margin-left: 375px;*/
     padding-left: 61px;
     width: 80%;
   }
@@ -162,14 +136,12 @@ main {
     align-self: end;
     grid-column: 5/8;
     justify-self: center;
-    /*margin-top: 54px;*/
     padding-left: 24px;
     width: 71%;
   }
 
   .leeuwen {
-    grid-column: 1/2;
-    grid-row: 10/11;
+    grid-area: 10/1/11/2;
     padding-top: 4px;
     padding-left: 15px;
     width: 17%;
@@ -182,19 +154,16 @@ main {
   }
 
   .author {
-    grid-column: 1/2;
-    grid-row: 10/11;
+    grid-area: 10/1/11/2;
     padding-top: 1px;
     padding-left: 92px;
     width: 30%;
 
     color: #1b2550;
-    font-family: Barlow;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
-    /* Text style for "mi music" */
     letter-spacing: 2.8px;
 
   }
@@ -208,23 +177,19 @@ main {
 
   .links-block-header {
     color: #1b2550;
-    font-family: Barlow;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 700;
-    grid-column: 3/5;
-    grid-row: 13/14;
+    grid-area: 13/3/14/5;
     line-height: 30px;
     margin-left: -2px;
     padding-top: 53px;
     text-transform: uppercase;
-    /* Text style for "share this" */
     letter-spacing: 2.8px;
   }
 
   .social {
     display: flex;
-    grid-column: 3/8;
-    grid-row: 14/15;
+    grid-area: 14/3/15/8;
     justify-content: space-between;
     list-style-type: none;
     margin-top: 7px;
@@ -236,8 +201,7 @@ main {
       border: 1px solid #dadbdf;
       color: #1b2550;
       display: inline-block;
-      font-family: Barlow;
-      font-size: 12px;
+      font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 2px;
       line-height: 37px;
@@ -249,7 +213,7 @@ main {
       &--tw::before {
         content: "\f099";
         font-family: FontAwesome;
-        font-size: 16px;
+        font-size: 1rem;
         margin-right: 3px;
         margin-left: -10px;
       }
@@ -258,12 +222,10 @@ main {
   }
 
   .news-header {
-    grid-column: 1/3;
-    grid-row: 15/16;
+    grid-area: 15/1/16/3;
 
     color: #1b2550;
-    font-family: Barlow;
-    font-size: 60px;
+    font-size: 3.75rem;
     line-height: 19px;
     font-weight: 600;
     padding-top: 177px;
@@ -284,8 +246,7 @@ main {
   .news {
     display: flex;
     flex-wrap: nowrap;
-    grid-row: 17/18;
-    grid-column: 1/8;
+    grid-area: 17/1/18/8;
     overflow-x: auto;
 
     &__item {
@@ -293,5 +254,13 @@ main {
     }
   }
 
+  .your-class {
+    grid-row: 17/18;
+    grid-column: 1/8;
+    /*margin: 0 -27px;*/
 
+    /*& > div {
+      margin: 0 27px;
+    }*/
+  }
 }

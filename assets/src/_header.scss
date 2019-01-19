@@ -1,11 +1,11 @@
 body {
+  font-family: Barlow, sans-serif;
   margin: 0;
 }
 
 header {
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  border-bottom: 270px solid transparent;
+  background: url("../images/header.png") no-repeat 50% 0;
+  border-bottom: 270px solid transparent;///270px in rem
   padding-top: 25px;
   padding-left: 25px;
 
@@ -15,27 +15,23 @@ header {
 
     & > .logo {
       color: #ffffff;
-      font-family: Barlow;
-      font-size: 24px;
+      font-size: 1.5rem;
       font-weight: 700;
       line-height: 12px;
       margin-top: 39px;
       margin-left: 25px;
       text-transform: uppercase;
-      /* Text style for "MUSIC." */
       letter-spacing: 6px;
 
       &::before {
         background-color: #032c9e;
         color: #ffffff;
         content: "Mi";
-        font-family: Barlow;
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
         line-height: 12px;
         padding: 11px;
         text-transform: uppercase;
-        /* Text style for "MI" */
         letter-spacing: 6px;
       }
     }
@@ -56,13 +52,11 @@ header {
 
         & > a {
           color: #ffffff;
-          font-family: Barlow, sans-serif;
-          font-size: 16px;
+          font-size: 1rem;
           font-weight: 700;
           line-height: 12px;
           text-decoration: none;
           text-transform: uppercase;
-          /* Text style for "HOME" */
           letter-spacing: 4.8px;
 
           &:hover {
@@ -102,27 +96,22 @@ header {
 
     .subtitle {
       color: #ffffff;
-      font-family: Barlow;
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 700;
       line-height: 12px;
-      /*padding-left: 3px;*/
       text-transform: uppercase;
-      /* Text style for "WORLD MUSI" */
       letter-spacing: 4.8px;
       width: 22%;
     }
 
     .title {
       color: #ffffff;
-      font-family: Barlow;
-      font-size: 60px;
+      font-size: 3.75rem;
       font-weight: 700;
       line-height: 80px;
       margin-top: 14px;
       margin-left: -27px;
       text-transform: uppercase;
-      /* Text style for "MI Music:" */
       letter-spacing: -0.6px;
       text-align: center;
       width: 77%;
@@ -136,12 +125,10 @@ header {
 
     .name {
       color: #ffffff;
-      font-family: Barlow;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: 700;
       line-height: 30px;
       text-transform: uppercase;
-      /* Text style for "james burl" */
       letter-spacing: 2.8px;
       padding-top: 5px;
       padding-left: 38px;
