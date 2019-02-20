@@ -1,8 +1,6 @@
 main {
   display: grid;
-  /*grid-column-gap: 132px;*/
   grid-template-columns: 24% 10% 9% 8% 16% 17% 16%;
-  /*grid-template-rows: auto auto auto auto auto auto auto auto auto;*/
 
   .content-title {
     color: #1b2550;
@@ -12,36 +10,32 @@ main {
     line-height: 38px;
     margin-top: 72px;
     margin-bottom: 24px;
-  }
 
-  .content-title--small {
-    color: #303342;
-    font-size: 2.25rem;
-    grid-area: 4/1/5/2;
-    line-height: 48px;
-    margin-top: 58px;
-    padding-left: 10px;
-  }
+    &--small {
+      color: #303342;
+      font-size: 2.25rem;
+      grid-area: 4/1/5/2;
+      line-height: 48px;
+      margin-top: 58px;
+      padding-left: 10px;
+    }
 
-  .content-title--after {
-    /*align-self: center;*/
-    /*grid-column: 3/7;*/
-    grid-row: 7/8;
-    margin-bottom: 36px;
-  }
+    &--after {
+      grid-row: 7/8;
+      margin-bottom: 36px;
+    }
 
-  .content-title--second {
-    grid-row: 11/12;
-    margin-top: 141px;
+    &--second {
+      grid-row: 11/12;
+      margin-top: 141px;
+    }
   }
 
   .date {
     color: #484b59;
     font-size: 1rem;
     font-weight: 700;
-    /*grid-column: 1/2;*/
     grid-row: 5/6;
-    /*justify-self: end;*/
     line-height: 38px;
     margin-top: -3px;
     padding-left: 12px;
@@ -56,22 +50,20 @@ main {
     font-weight: 400;
     grid-area: 2/3/3/8;
     line-height: 30px;
-  }
 
-  .description--small {
-    grid-area: 6/1/8/2;
-    padding-left: 16px;
-  }
+    &--small {
+      grid-area: 6/1/8/2;
+      padding-left: 16px;
+    }
 
-  .description--after {
-    /*grid-column: 3/4;*/
-    grid-row: 8/9;
-    margin-top: 6px;
+    &--after {
+      grid-row: 8/9;
+      margin-top: 6px;
+    }
 
-  }
-
-  .description--second {
-    grid-row: 12/13;
+    &--second {
+      grid-row: 12/13;
+    }
   }
 
   /*video {
@@ -85,8 +77,6 @@ main {
   }*/
 
   .aside {
-    /*grid-column: 1/2;
-    justify-self: end;*/
     height: auto;
     margin-top: 56px;
     margin-left: 15px;
@@ -103,13 +93,11 @@ main {
 
   .read-more {
     border-left: 2px solid #032c9e;
-    /*grid-column: 1/2;*/
     grid-row: 8/9;
     height: 7%;
     margin-top: 25px;
     margin-left: 15px;
     padding-left: 29px;
-
     color: #1b2550;
     font-size: 0.875rem;
     font-weight: 700;
@@ -123,21 +111,21 @@ main {
     font-style: italic;
     grid-row: 9/10;
     line-height: 48px;
-  }
 
-  .quote--left {
-    grid-column: 1/4;
-    margin-top: 82px;
-    padding-left: 61px;
-    width: 80%;
-  }
+    &--left {
+      grid-column: 1/4;
+      margin-top: 82px;
+      padding-left: 61px;
+      width: 80%;
+    }
 
-  .quote--right {
-    align-self: end;
-    grid-column: 5/8;
-    justify-self: center;
-    padding-left: 24px;
-    width: 71%;
+    &--right {
+      align-self: end;
+      grid-column: 5/8;
+      justify-self: center;
+      padding-left: 24px;
+      width: 71%;
+    }
   }
 
   .leeuwen {
@@ -145,12 +133,12 @@ main {
     padding-top: 4px;
     padding-left: 15px;
     width: 17%;
-  }
 
-  .leeuwen--right {
-    grid-column: 5/6;
-    padding-left: 52px;
-    width: 25%;
+    &--right {
+      grid-column: 5/6;
+      padding-left: 52px;
+      width: 25%;
+    }
   }
 
   .author {
@@ -158,7 +146,6 @@ main {
     padding-top: 1px;
     padding-left: 92px;
     width: 30%;
-
     color: #1b2550;
     font-size: 0.875rem;
     font-weight: 700;
@@ -166,13 +153,11 @@ main {
     text-transform: uppercase;
     letter-spacing: 2.8px;
 
-  }
-
-  .author--right {
-    grid-column: 5/7;
-    padding-top: 1px;
-    padding-left: 129px;
-
+    &--right {
+      grid-column: 5/7;
+      padding-top: 1px;
+      padding-left: 129px;
+    }
   }
 
   .links-block-header {
@@ -218,12 +203,10 @@ main {
         margin-left: -10px;
       }
     }
-
   }
 
   .news-header {
     grid-area: 15/1/16/3;
-
     color: #1b2550;
     font-size: 3.75rem;
     line-height: 19px;
@@ -244,23 +227,40 @@ main {
   }
 
   .news {
-    display: flex;
-    flex-wrap: nowrap;
-    grid-area: 17/1/18/8;
-    overflow-x: auto;
-
-    &__item {
-      flex: 0 0 auto;
-    }
-  }
-
-  .your-class {
     grid-row: 17/18;
     grid-column: 1/8;
-    /*margin: 0 -27px;*/
+    margin-top: 86px;
 
-    /*& > div {
-      margin: 0 27px;
-    }*/
+    .schneider {
+      width: 30%;
+      height: 40.5vh;
+      background-image: url("/mi-music/assets/images/cody-schneider.png");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .rodvang {
+      width: 30%;
+      height: 40.5vh;
+      background-image: url("/mi-music/assets/images/victor-rodvang.png");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .wimmerman {
+      width: 30%;
+      height: 40.5vh;
+      background-image: url("/mi-music/assets/images/oskar-wimmerman.png");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    .khantho {
+      width: 30%;
+      height: 40.5vh;
+      background-image: url("/mi-music/assets/images/puk-khantho.png");
+      background-position: 50% 50%;
+      background-size: cover;
+    }
   }
 }
